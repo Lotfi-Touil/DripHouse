@@ -17,9 +17,20 @@ a {
 h1 {
     font-size: rem(24);
     font-family: $font1;
-    color: $dark;
+}
+
+.font-family-josefin {
+    font-family: $font1;
 }
 
 .text-warning {
-    color: $warning-color;
+    color: $warning-color !important;
+}
+
+.bg-dark {
+    background-color: $dark !important;
+}
+
+.uppercase {
+    text-transform: uppercase;
 }
