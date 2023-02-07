@@ -1,0 +1,18 @@
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0.5em;
+
+    input {
+        flex: 1;
+        border: 0;
+        margin-left: 1em;
+
+        &:focus {
+            outline: none !important;
+        }
+    }
+}
