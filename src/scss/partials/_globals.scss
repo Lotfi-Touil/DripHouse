@@ -4,4 +4,17 @@
 
 html {}
 
-body {}
+body {
+    font-family: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+h1 {
+    font-size: rem(24);
+    font-family: $font1;
+    color: $dark;
+}
