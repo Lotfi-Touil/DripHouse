@@ -19,18 +19,6 @@ h1 {
     font-family: $font1;
 }
 
-.font-family-josefin {
-    font-family: $font1;
-}
-
-.text-warning {
-    color: $warning-color !important;
-}
-
-.bg-dark {
-    background-color: $dark !important;
-}
-
-.uppercase {
-    text-transform: uppercase;
+.border-article {
+    border-bottom: solid 2.5px $warning-color;
 }
