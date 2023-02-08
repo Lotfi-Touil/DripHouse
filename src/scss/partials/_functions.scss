@@ -2,3 +2,13 @@
     $base: 16;
     @return calc($pxval / $base * 1rem);
 }
+
+@mixin padding-y($remVal) {
+    padding-top: calc($remVal * 1rem);
+    padding-bottom: calc($remVal * 1rem);
+}
+
+@mixin col-6() {
+    flex: 0 0 auto;
+    width: 50%;
+}

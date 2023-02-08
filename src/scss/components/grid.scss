@@ -1,6 +1,68 @@
+.container,
+.container-sm,
+.container-md,
+.container-lg {
+    --gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--gutter-x) * 0.5);
+    padding-left: calc(var(--gutter-x) * 0.5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+
+    .container-sm,
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .container,
+    .container-sm,
+    .container-md,
+    .container-lg {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .container,
+    .container-sm,
+    .container-md,
+    .container-lg {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    .container,
+    .container-sm,
+    .container-md,
+    .container-lg {
+        max-width: 1320px;
+    }
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
+    --gutter-x: 1.5rem;
+    margin: 0 calc(var(--gutter-x) * -0.5);
 }
 
 /* ========== Colonnes ========== */
@@ -17,41 +79,57 @@
 .col-1 {
     flex: 0 0 auto;
     width: 8.33333333%;
+    --gutter-x: 1.5rem;
+    padding: 0 calc(var(--gutter-x) * 0.5);
 }
 
 .col-2 {
     flex: 0 0 auto;
     width: 16.66666667%;
+    --gutter-x: 1.5rem;
+    padding: 0 calc(var(--gutter-x) * 0.5);
 }
 
 .col-3 {
     flex: 0 0 auto;
     width: 25%;
+    --gutter-x: 1.5rem;
+    padding: 0 calc(var(--gutter-x) * 0.5);
 }
 
 .col-4 {
     flex: 0 0 auto;
     width: 33.33333333%;
+    --gutter-x: 1.5rem;
+    padding: 0 calc(var(--gutter-x) * 0.5);
 }
 
 .col-5 {
     flex: 0 0 auto;
     width: 41.66666667%;
+    --gutter-x: 1.5rem;
+    padding: 0 calc(var(--gutter-x) * 0.5);
 }
 
 .col-6 {
     flex: 0 0 auto;
     width: 50%;
+    --gutter-x: 1.5rem;
+    padding: 0 calc(var(--gutter-x) * 0.5);
 }
 
 .col-7 {
     flex: 0 0 auto;
     width: 58.33333333%;
+    --gutter-x: 1.5rem;
+    padding: 0 calc(var(--gutter-x) * 0.5);
 }
 
 .col-8 {
     flex: 0 0 auto;
     width: 66.66666667%;
+    --gutter-x: 1.5rem;
+    padding: 0 calc(var(--gutter-x) * 0.5);
 }
 
 .col-9 {

@@ -1,0 +1,13 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    border: 2px solid $dark;
+    padding: 1rem;
+
+    &--btn--small {}
+
+    &--big {
+        text-transform: uppercase;
+        padding: 0.5rem;
+    }
+}
