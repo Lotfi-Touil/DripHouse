@@ -1,0 +1,9 @@
+.slider {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    .slide {
+        width: 100%;
+    }
+}

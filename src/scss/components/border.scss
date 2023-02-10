@@ -2,6 +2,10 @@
     border: $border-default-width $border-default-style $border-default-color;
 }
 
+.border-0 {
+    border: 0 !important;
+}
+
 .border-light-grey {
     border-color: $light-grey;
 }
