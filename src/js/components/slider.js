@@ -5,6 +5,12 @@ $(document).ready(function () {
     const slider = $('.slider');
     const slides = $('.slide');
 
+    /**
+     * Au chargement de la page, on utilise la classe d-none car avec hide(), on voit les différentes div pendant une demi-seconde.
+     * Une fois la page chargée et qu'on arrive au fichier slider.js, on peux enlever d-none partout et maintenant jouer avec hide() et show().
+     */
+    slides.removeClass('d-none');
+
     // Variables pour suivre la position actuelle du slider
     let currentSlide = 0;
 
