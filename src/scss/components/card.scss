@@ -28,9 +28,6 @@
     }
 
     &--small {
-        .card-img {
-            max-height: 128px;
-            max-width: 163px;
-        }
+        .card-img {}
     }
 }
