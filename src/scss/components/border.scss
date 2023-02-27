@@ -7,25 +7,13 @@
 }
 
 .border-light-grey {
-    border-color: $light-grey;
+    border-color: $light-grey !important;
 }
 
 .border-grey {
-    border-color: $light-grey;
+    border-color: $light-grey !important;
 }
 
 .border-dark-grey {
-    border-color: $light-grey;
-}
-
-.bg-light-grey {
-    background-color: $light-grey;
-}
-
-.bg-grey {
-    background-color: $light-grey;
-}
-
-.bg-dark-grey {
-    background-color: $light-grey;
+    border-color: $light-grey !important;
 }

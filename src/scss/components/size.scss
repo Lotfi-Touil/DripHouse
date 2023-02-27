@@ -1,7 +1,7 @@
-.w-100 {
-    width: 100% !important;
-}
+@for $i from 0 through 4 {
+    $width: $i * 25%;
 
-.h-100 {
-    height: 100% !important;
+    .w-#{$i * 25} {
+        width: $width;
+    }
 }

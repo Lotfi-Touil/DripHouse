@@ -135,19 +135,27 @@
 .col-9 {
     flex: 0 0 auto;
     width: 75%;
+    --gutter-x: 1.5rem;
+    padding: 0 calc(var(--gutter-x) * 0.5);
 }
 
 .col-10 {
     flex: 0 0 auto;
     width: 83.33333333%;
+    --gutter-x: 1.5rem;
+    padding: 0 calc(var(--gutter-x) * 0.5);
 }
 
 .col-11 {
     flex: 0 0 auto;
     width: 91.66666667%;
+    --gutter-x: 1.5rem;
+    padding: 0 calc(var(--gutter-x) * 0.5);
 }
 
 .col-12 {
     flex: 0 0 auto;
     width: 100%;
+    --gutter-x: 1.5rem;
+    padding: 0 calc(var(--gutter-x) * 0.5);
 }

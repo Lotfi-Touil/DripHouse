@@ -1,0 +1,19 @@
+.subscribe-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 45px;
+    padding: 0.5em;
+
+    input {
+        flex: 1;
+        border: 0;
+        margin-left: 1em;
+        background-color: $white;
+
+        &:focus {
+            outline: none !important;
+        }
+    }
+}

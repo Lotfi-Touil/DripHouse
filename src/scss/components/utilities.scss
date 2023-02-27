@@ -17,3 +17,15 @@
 .d-none {
     display: none !important;
 }
+
+.text-align-center {
+    text-align: center !important;
+}
+
+@for $i from 6 through 16 {
+    $size: $i * 1px;
+
+    .font-size-#{$i} {
+        font-size: $size;
+    }
+}
