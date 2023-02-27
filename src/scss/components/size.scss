@@ -1,7 +1,8 @@
-@for $i from 0 through 4 {
-    $width: $i * 25%;
+@for $i from 0 through 10 {
+    $width: $i * 10%;
+    $class: if($i ==2, 'w-25', if($i ==7, 'w-75', 'w-#{$i * 10}'));
 
-    .w-#{$i * 25} {
+    .#{$class} {
         width: $width;
     }
 }
