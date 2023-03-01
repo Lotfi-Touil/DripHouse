@@ -23,7 +23,8 @@
             justify-content: center;
             text-transform: uppercase;
             font-family: $font1;
-            @include padding-y(0.5);
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
         }
     }
 

@@ -3,12 +3,8 @@
     @return calc($pxval / $base * 1rem);
 }
 
-@mixin padding-y($remVal) {
-    padding-top: calc($remVal * 1rem);
-    padding-bottom: calc($remVal * 1rem);
-}
-
-@mixin col-6() {
-    flex: 0 0 auto;
-    width: 50%;
+@mixin cover-bg() {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }

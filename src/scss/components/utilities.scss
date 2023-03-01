@@ -1,5 +1,9 @@
 .font-family-josefin {
-    font-family: $font1;
+    font-family: $font1 !important;
+}
+
+.font-family-roboto {
+    font-family: $font2 !important;
 }
 
 .uppercase {
@@ -23,11 +27,11 @@
 }
 
 .text-align-justify {
-    text-align:justify !important
+    text-align: justify !important
 }
 
 
-@for $i from 6 through 16 {
+@for $i from 6 through 20 {
     $size: $i * 1px;
 
     .font-size-#{$i} {
