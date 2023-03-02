@@ -11,9 +11,12 @@
 }
 
 .border-grey {
-    border-color: $light-grey !important;
+    border-color: $grey !important;
 }
 
 .border-dark-grey {
-    border-color: $light-grey !important;
+    border-color: $dark-grey !important;
+}
+.border-dark{
+    border-color: $dark;
 }
