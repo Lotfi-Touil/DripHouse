@@ -1,0 +1,13 @@
+#like-button {
+    
+    border: none;
+    cursor: pointer;
+  }
+  
+  #like-icon {
+    fill: black;
+  }
+  
+  #like-button.clicked #like-icon {
+    fill: red;
+  }
