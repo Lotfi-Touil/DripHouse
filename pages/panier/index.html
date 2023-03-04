@@ -10,28 +10,41 @@
 </head>
 
 <body>
-	<div class="safe-area"></div>
+	<div class="safe-area d-lg-none"></div>
 	<!-- ======= Header ======= -->
 	<header>
-		<div>
-			<nav class="navbar text-dark">
-				<a href="#">
-					<i class="fas fa-bars"></i>
-				</a>
+		<!-- MOBILE -->
+		<nav class="container navbar navbar--mobile text-dark d-lg-none">
+			<a href="#" class="burger-menu-button">
+				<i class="fas fa-bars"></i>
+			</a>
+			<a href="../../index.html">
+				<h1>DRIP<span class="text-warning">'</span>HOUSE</h1>
+			</a>
+			<a href="../../pages/panier/index.html">
+				<i class="fas fa-bag-shopping"></i>
+			</a>
+		</nav>
+		<!-- DESKTOP -->
+		<nav class="container d-none d-lg-flex navbar navbar--desktop text-dark d-flex justify-content-between pt-3">
+			<div>
 				<a href="../../index.html">
 					<h1>DRIP<span class="text-warning">'</span>HOUSE</h1>
 				</a>
-				<a href="#">
-					<i class="fas fa-bag-shopping"></i>
-				</a>
-			</nav>
-		</div>
+			</div>
+			<div class=" font-family-josefin font-size-24 d-flex justify-content-end">
+				<a href="#" class="uppercase ml-4 text-red">Soldes</a>
+				<a href="#" class="uppercase ml-4">Nouveautés</a>
+				<a href="#" class="uppercase ml-4">Chaussures</a>
+				<a href="#" class="uppercase ml-4">Vetements</a>
+			</div>
+		</nav>
 	</header>
 	<!-- ======= End Header ======= -->
 
 	<!-- ======= Search Bar ======= -->
-	<section>
-		<div class="search-bar">
+	<section class="container">
+		<div class="search-bar d-lg-none">
 			<i class="fa-solid fa-magnifying-glass text-warning"></i>
 			<input type="text" name="input-search" id="" placeholder="Rechercher">
 		</div>
@@ -39,19 +52,29 @@
 	<!-- ======= End Search Bar ======= -->
 
 	<!-- ======= Slider ======= -->
-	<section class="mt-3">
-		<div class="slider row bg-dark">
-			<div class="col-2 d-flex align-items-center">
-				<button class="arrow prev bg-dark border-0 text-warning"><i class="fas fa-chevron-left"></i></button>
+	<section class="mt-3 bg-dark">
+		<div class="container d-lg-none">
+			<div class="row slider">
+				<div class="col-2 d-flex align-items-center">
+					<button class="arrow prev bg-dark border-0 text-warning"><i
+							class="fas fa-chevron-left"></i></button>
+				</div>
+				<div class="col-8 slides">
+					<div class="slide btn btn--big text-warning">Nos magasins</div>
+					<div class="slide btn btn--big text-warning d-none">Nos horaires</div>
+					<div class="slide btn btn--big text-warning d-none">Nos réseaux</div>
+				</div>
+				<div class="col-2 d-flex align-items-center justify-content-end">
+					<button class="arrow next bg-dark border-0 text-warning"><i
+							class="fas fa-chevron-right"></i></button>
+				</div>
 			</div>
-			<div class="col-8 slides">
-				<div class="slide btn btn--big text-warning">Nos magasins</div>
-				<div class="slide btn btn--big text-warning">Nos horaires</div>
-				<div class="slide btn btn--big text-warning">Nos réseaux</div>
-			</div>
-			<div class="col-2 d-flex align-items-center justify-content-end">
-				<button class="arrow next bg-dark border-0 text-warning"><i class="fas fa-chevron-right"></i></button>
-			</div>
+		</div>
+		<div
+			class="container text-warning py-2 my-3 font-size-16 font-size-lg-20 d-none d-lg-flex justify-content-between">
+			<a href="#" class="uppercase my-2">Contactez-nous</a>
+			<a href="#" class="uppercase my-2">Livraison gratuite dès 100€</a>
+			<a href="#" class="uppercase my-2">twitter / instagram : @DripHouse</a>
 		</div>
 	</section>
 	<!-- ======= End Slider ======= -->
@@ -69,6 +92,96 @@
 		</div>
 	</section>
 
+	<!-- ======= Footer ======= -->
+	<footer>
+		<div class="d-flex justify-content-center bg-grey py-3 mt-4">
+			<div class="container d-flex justify-content-between">
+				<div class="d-flex flex-direction-column align-items-center">
+					<img src="../../assets/img/icons/position.svg" class="w-60 mb-2" alt="icone position">
+					<span class="font-size-15 text-align-center">Retrait gratuit en magasin</span>
+				</div>
+				<div class="d-flex flex-direction-column align-items-center">
+					<img src="../../assets/img/icons/truck.svg" class="w-60 mb-2" alt="icone camion">
+					<span class="font-size-15 text-align-center">Livraison offerte dès 100€</span>
+				</div>
+				<div class="d-flex flex-direction-column align-items-center">
+					<img src="../../assets/img/icons/box.svg" class="w-60 mb-2" alt="icone carton">
+					<span class="font-size-15 text-align-center">Retours gratuits</span>
+				</div>
+				<div class="d-flex flex-direction-column align-items-center">
+					<img src="../../assets/img/icons/headset.svg" class="w-60 mb-2" alt="icone casque">
+					<span class="font-size-15 text-align-center">Service client</span>
+				</div>
+			</div>
+		</div>
+		<div class="mb-3">
+			<div class="text-align-center">
+				<h4 class="uppercase">Nos réseaux</h4>
+			</div>
+			<div class="container d-flex justify-content-between">
+				<div class="d-flex justify-content-center">
+					<img src="../../assets/img/logo/instagram.png" class="w-70" alt="Logo instagram">
+				</div>
+				<div class="d-flex justify-content-center">
+					<img src="../../assets/img/logo/snapchat.png" class="w-70" alt="Logo snapchat">
+				</div>
+				<div class="d-flex justify-content-center">
+					<img src="../../assets/img/logo/twitter.png" class="w-70" alt="Logo twitter">
+				</div>
+				<div class="d-flex justify-content-center">
+					<img src="../../assets/img/logo/youtube.png" class="w-70" alt="Logo youtube">
+				</div>
+				<div class="d-flex justify-content-center">
+					<img src="../../assets/img/logo/facebook.png" class="w-70" alt="Logo facebook">
+				</div>
+			</div>
+		</div>
+		<div class="bg-grey pb-3">
+			<div class="container">
+				<div>
+					<p class="text-align-center p-2">
+						Inscrivez-vous pour recevoir des informations sur le produits, les histoires
+						originales, les
+						évènements et autres.</p>
+				</div>
+				<div class="d-flex justify-content-center">
+					<div class="subscribe-bar w-75 bg-white">
+						<input type="text" name="input-subscribe" id="" placeholder="Abonnez-vous !">
+						<img src="../../assets/img/icons/arrow-circle-right.svg" class="w-10" alt="s'abonner">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="d-flex mt-3 justify-content-between font-size-15">
+				<a href="#" class="px-2">A propos</a>
+				<a href="#" class="px-2">Communautés</a>
+				<a href="#" class="px-2">Conditions</a>
+				<a href="#" class="px-2">Contact</a>
+			</div>
+		</div>
+		<div class="container mt-3 text-align-center">
+			<p class="font-size-13">Copyright © 2023 DripHouse | All rights reserved</p>
+		</div>
+	</footer>
+	<!-- ======= End Footer ======= -->
+
+	<!-- ======= Burger Menu ======= -->
+	<div class="container burger-menu d-none">
+		<div class="burger-menu-content">
+			<div class="d-flex flex-direction-column">
+				<a href="#" class="burger-menu-close my-2">
+					<img src="../../assets/img/icons/cross.svg" alt="Fermer le menu" class="w-25">
+				</a>
+				<a href="#" class="uppercase my-2">Accueil</a>
+				<a href="#" class="uppercase my-2 text-red">Soldes</a>
+				<a href="#" class="uppercase my-2">Nouveautés</a>
+				<a href="#" class="uppercase my-2">Chaussures</a>
+				<a href="#" class="uppercase my-2">Vetements</a>
+			</div>
+		</div>
+	</div>
+	<!-- ======= End Burger Menu ======= -->
 </body>
 
 </html>
