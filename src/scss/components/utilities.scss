@@ -49,7 +49,7 @@
 }
 
 
-@for $i from 6 through 24 {
+@for $i from 6 through 28 {
     $size: $i * rem(1);
 
     .font-size-#{$i} {
