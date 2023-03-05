@@ -5,6 +5,13 @@
     .#{$class} {
         width: $width;
     }
+
+    $height: $i * 10%;
+    $class: h-#{$i * 10};
+
+    .#{$class} {
+        height: $height;
+    }
 }
 
 .w-25 {
@@ -13,4 +20,142 @@
 
 .w-75 {
     width: 75%;
+}
+
+.h-25 {
+    height: 25%;
+}
+
+.h-75 {
+    height: 75%;
+}
+
+@for $i from 1 through 14 {
+    /***** WIDTH *****/
+    $width: $i * 1rem;
+
+    $class: w-rem-#{$i};
+
+    .#{$class} {
+        width: $width;
+    }
+
+    $sm-class: w-rem-sm-#{$i};
+
+    .#{$sm-class} {
+        @media (min-width: 576px) {
+            width: $width;
+        }
+    }
+
+    $md-class: w-rem-md-#{$i};
+
+    .#{$md-class} {
+        @media (min-width: 768px) {
+            width: $width;
+        }
+    }
+
+    $lg-class: w-rem-lg-#{$i};
+
+    .#{$lg-class} {
+        @media (min-width: 992px) {
+            width: $width;
+        }
+    }
+
+    /***** HEIGHT *****/
+    $height: $i * 1rem;
+
+    $class: h-rem-#{$i};
+
+    .#{$class} {
+        height: $height;
+    }
+
+    $sm-class: h-rem-sm-#{$i};
+
+    .#{$sm-class} {
+        @media (min-width: 576px) {
+            height: $height;
+        }
+    }
+
+    $md-class: h-rem-md-#{$i};
+
+    .#{$md-class} {
+        @media (min-width: 768px) {
+            height: $height;
+        }
+    }
+
+    $lg-class: h-rem-lg-#{$i};
+
+    .#{$lg-class} {
+        @media (min-width: 992px) {
+            height: $height;
+        }
+    }
+
+    /***** MAX WIDTH *****/
+    $class: max-w-#{$i};
+
+    .#{$class} {
+        max-width: $width;
+    }
+
+    $sm-class: max-w-sm-#{$i};
+
+    .#{$sm-class} {
+        @media (min-width: 576px) {
+            max-width: $width;
+        }
+    }
+
+    $md-class: max-w-md-#{$i};
+
+    .#{$md-class} {
+        @media (min-width: 768px) {
+            max-width: $width;
+        }
+    }
+
+    $lg-class: max-w-lg-#{$i};
+
+    .#{$lg-class} {
+        @media (min-width: 992px) {
+            max-width: $width;
+        }
+    }
+
+    /***** MAX HEIGHT *****/
+    $class: max-h-#{$i};
+
+    .#{$class} {
+        max-height: $height;
+    }
+
+    $sm-class: max-h-sm-#{$i};
+
+    .#{$sm-class} {
+        @media (min-width: 576px) {
+            max-height: $height;
+        }
+    }
+
+    $md-class: max-h-md-#{$i};
+
+    .#{$md-class} {
+        @media (min-width: 768px) {
+            max-height: $height;
+        }
+    }
+
+    $lg-class: max-h-lg-#{$i};
+
+    .#{$lg-class} {
+        @media (min-width: 992px) {
+            max-height: $height;
+        }
+    }
 }
