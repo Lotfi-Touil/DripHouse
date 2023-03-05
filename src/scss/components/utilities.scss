@@ -48,10 +48,6 @@
     text-align: justify !important
 }
 
-.border-radius-10{
-    border-radius: 10px
-}
-
 @for $i from 6 through 28 {
     $size: $i * rem(1);
 
@@ -63,6 +59,12 @@
         .font-size-lg-#{$i} {
             font-size: $size;
         }
+    }
+
+    $radius: $i * rem(1);
+
+    .border-radius-#{$i} {
+        border-radius: $radius;
     }
 }
 
