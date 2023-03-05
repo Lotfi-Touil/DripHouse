@@ -40,6 +40,26 @@ $cols: 12; // nombre de colonnes
 }
 
 @for $i from 1 through $cols {
+    .col-sm-#{$i} {
+        @media (min-width: 576px) {
+            flex: 0 0 auto;
+            width: #{percentage($i / $cols)};
+            padding: 0 calc(var(--gutter-x) * 0.5);
+        }
+    }
+}
+
+@for $i from 1 through $cols {
+    .col-md-#{$i} {
+        @media (min-width: 768px) {
+            flex: 0 0 auto;
+            width: #{percentage($i / $cols)};
+            padding: 0 calc(var(--gutter-x) * 0.5);
+        }
+    }
+}
+
+@for $i from 1 through $cols {
     .col-lg-#{$i} {
         @media (min-width: 992px) {
             flex: 0 0 auto;
