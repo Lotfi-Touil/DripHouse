@@ -55,6 +55,18 @@
         font-size: $size;
     }
 
+    @media (min-width: 576px) {
+        .font-size-sm-#{$i} {
+            font-size: $size;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .font-size-md-#{$i} {
+            font-size: $size;
+        }
+    }
+
     @media (min-width: 992px) {
         .font-size-lg-#{$i} {
             font-size: $size;
