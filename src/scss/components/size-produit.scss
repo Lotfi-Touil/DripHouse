@@ -2,7 +2,22 @@
     .btn {
         background-color: $white;
         border-color: $grey;
-        font-size: rem(15);
-        font-weight: 600;
+        font-size: rem(17);
+        font-weight: 500;
+
+        @media (min-width: 490px) {
+            font-size: rem(20);
+            padding: 1.25rem;
+        }
+
+        @media (min-width: 576px) {
+            font-size: rem(22);
+            padding: 1.5rem;
+        }
+
+        @media (min-width: 620px) {
+            font-size: rem(22);
+            padding: 1.5rem;
+        }
     }
 }
