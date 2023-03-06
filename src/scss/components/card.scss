@@ -65,6 +65,8 @@
 
     &--small {
         .card-img {
+            height: 10rem !important;
+
             @media (min-width: 576px) {
                 height: 15rem !important;
             }
