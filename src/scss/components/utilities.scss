@@ -90,6 +90,12 @@
     }
 }
 
-.line-heigt{
-    line-height: 4rem;
+.line-height-2 {
+    line-height: 2rem;
+}
+
+.line-height-lg-25 {
+    @media (min-width: 992px) {
+        line-height: 2.5rem;
+    }
 }
