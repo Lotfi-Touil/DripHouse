@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Design Guide</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Design Guide</h1>
+    </header>
+    <main>
+          <h2>Largeur et hauteur maximales</h2>
+          <p>
+            Utilisez ces classes pour définir la largeur et la hauteur maximales
+            d'un élément.
+          </p>
+      
+          <h3>Classes de largeur maximale</h3>
+          <ul>
+            <li><code>.max-w-1</code> - Largeur maximale de 1rem</li>
+            <li><code>.max-w-2</code> - Largeur maximale de 2rem</li>
+            <li>...</li>
+            <li><code>.max-w-14</code> - Largeur maximale de 14rem</li>
+          </ul>
+      
+          <p>
+            Les classes ci-dessus définissent la largeur maximale de l'élément en
+            rem. Pour les appareils de taille moyenne et grande, vous pouvez
+            utiliser des classes supplémentaires pour définir la largeur maximale
+            à différentes tailles d'écran. Les classes suivantes seront appliquées
+            aux écrans d'une largeur minimale de :
+          </p>
+      
+          <ul>
+            <li><code>.max-w-sm-1</code> - Largeur maximale de 1rem</li>
+            <li><code>.max-w-sm-2</code> - Largeur maximale de 2rem</li>
+            <li>...</li>
+            <li><code>.max-w-sm-14</code> - Largeur maximale de 14rem</li>
+          </ul>
+      
+          <ul>
+            <li><code>.max-w-md-1</code> - Largeur maximale de 1rem</li>
+            <li><code>.max-w-md-2</code> - Largeur maximale de 2rem</li>
+            <li>...</li>
+            <li><code>.max-w-md-14</code> - Largeur maximale de 14rem</li>
+          </ul>
+      
+          <ul>
+            <li><code>.max-w-lg-1</code> - Largeur maximale de 1rem</li>
+            <li><code>.max-w-lg-2</code> - Largeur maximale de 2rem</li>
+            <li>...</li>
+            <li><code>.max-w-lg-14</code> - Largeur maximale de 14rem</li>
+          </ul>
+      
+          <h3>Classes de hauteur maximale</h3>
+          <ul>
+            <li><code>.max-h-1</code> - Hauteur maximale de 1rem</li>
+            <li><code>.max-h-2</code> - Hauteur maximale de 2rem</li>
+            <li>...</li>
+            <li><code>.max-h-14</code> - Hauteur maximale de 14rem</li>
+          </ul>
+      
+          <p>
+            Les classes ci-dessus définissent la hauteur maximale d'un élément avec les valeurs en rem allant de 1 à 14, pour les tailles "small" (576px et plus), "medium" (768px et plus) et "large" (992px et plus). Pour définir la hauteur maximale, utilisez la classe "max-h-" suivie de la valeur de hauteur en rem, par exemple :</p>
+            <pre><code>&lt;div class="max-h-4"&gt;
+              ...
+            &lt;/div&gt;
+            </code></pre>
+            <p> De même, pour définir la hauteur maximale à différentes tailles d'écran, utilisez les classes de médias responsives comme suit :</p>
+            <pre><code>&lt;div class="max-h-6 max-h-md-8 max-h-lg-10"&gt;
+              ...
+            &lt;/div&gt;
+            </code></pre>
+            <p> Cela définit la hauteur maximale à 6rem pour les écrans de taille inférieure à 576px, 8rem pour les écrans de taille comprise entre 576px et 768px, et 10rem pour les écrans de taille supérieure à 992px.</p>
+            <h3> Largeur Maximale </h3>
+            <p>Les classes ci-dessous définissent la largeur maximale d'un élément avec les valeurs en rem allant de 1 à 14, pour les tailles "small" (576px et plus), "medium" (768px et plus) et "large" (992px et plus). Utilisez la classe "max-w-" suivie de la valeur de largeur en rem pour définir la largeur maximale :</p>
+            <pre><code>&lt;div class="max-w-8"&gt;
+              ...
+            &lt;/div&gt;
+            </code></pre>
+            <p> De même, pour définir la largeur maximale à différentes tailles d'écran, utilisez les classes de médias responsives comme suit :</p>
+            <pre><code>&lt;div class="max-w-10 max-w-md-12 max-w-lg-14"&gt;
+              ...
+            &lt;/div&gt;
+            </code></pre>
+            <p> Cela définit la largeur maximale à 10rem pour les écrans de taille inférieure à 576px, 12rem pour les écrans de taille comprise entre 576px et 768px, et 14rem pour les écrans de taille supérieure à 992px.</p>
+            <h2>Les classes .container</h2>
+            <p>
+              Les classes .container sont utilisées pour envelopper le contenu de la page
+              et définir la largeur maximale des éléments à l'intérieur. Elles sont
+              disponibles en plusieurs tailles pour s'adapter à différents écrans :
+            </p>
+            <ul>
+              <li>.container : largeur maximale de 95% pour les écrans de toutes les
+                tailles.</li>
+              <li>.container-sm : largeur maximale de 95% pour les écrans supérieurs à
+                576px.</li>
+              <li>.container-md : largeur maximale de 95% pour les écrans supérieurs à
+                768px.</li>
+              <li>.container-lg : largeur maximale de 95% pour les écrans supérieurs à
+                992px.</li>
+            </ul>
+            <h2>Les classes de colonnes</h2>
+            <p>
+              Les classes de colonnes sont utilisées pour créer des colonnes à l'intérieur
+              des conteneurs .row. Il y a 12 colonnes disponibles. Les classes de colonnes
+              sont disponibles en plusieurs tailles pour s'adapter à différents écrans :
+            </p>
+            <ul>
+              <li>.col-auto : colonne avec une largeur automatique.</li>
+              <li>.col-{x} : colonne avec une largeur de x/12*100%. Exemple : .col-6
+                crée une colonne de 50% de la largeur du conteneur parent.</li>
+              <li>.col-sm-{x} : colonne avec une largeur de x/12*100% pour les écrans
+                supérieurs à 576px.</li>
+              <li>.col-md-{x} : colonne avec une largeur de x/12*100% pour les écrans
+                supérieurs à 768px.</li>
+              <li>.col-lg-{x} : colonne avec une largeur de x/12*100% pour les écrans
+                supérieurs à 992px.</li>
+            </ul>
+
+            <section>
+                <h2>Utilisation de la classe .row</h2>
+                <p>La classe .row est utilisée pour créer une rangée de colonnes. Elle utilise Flexbox pour aligner les colonnes horizontalement et pour permettre à la rangée de se plier (wrap) lorsque les colonnes atteignent la largeur maximale de leur parent. Voici comment l'utiliser :</p>
+                <h3>Exemple :</h3>
+                <pre><code>&lt;div class="row"&gt;
+                &lt;div class="col-6"&gt;&lt;/div&gt;
+                &lt;div class="col-6"&gt;&lt;/div&gt;
+              &lt;/div&gt;</code></pre>
+                <p>Dans cet exemple, nous avons deux colonnes de taille égale qui sont alignées horizontalement. La classe .row enveloppe les deux colonnes et leur applique les propriétés Flexbox nécessaires pour les aligner correctement.</p>
+                <p>Il est important de noter que la classe .row doit toujours être utilisée avec des colonnes (classes .col-x) pour garantir un comportement cohérent.</p>
+              </section>
+
+
+
+
+
+              <section>
+              <div>
+                <h2>Classes de colonnes</h2>
+                <p>Le système de grille de ce framework est basé sur un nombre de colonnes configuré à l'aide de la variable $cols.</p>
+                <p>Pour utiliser les classes de colonnes, vous pouvez utiliser la classe .col-auto pour une colonne avec une largeur automatique, ou les classes .col-{nombre} pour spécifier une largeur de colonne fixe.</p>
+                <p>Les classes .col-sm-{nombre}, .col-md-{nombre}, et .col-lg-{nombre} vous permettent de définir des largeurs de colonnes spécifiques pour différents points de rupture en utilisant les media queries correspondantes.</p>
+              </div>
+              <div>
+                <h2>Exemples d'utilisation</h2>
+                <pre>
+                  &lt;div class="row"&gt;
+                    &lt;div class="col-6 col-sm-4 col-md-3 col-lg-2"&gt;
+                      Contenu de la colonne
+                    &lt;/div&gt;
+                    &lt;div class="col-6 col-sm-4 col-md-3 col-lg-2"&gt;
+                      Contenu de la colonne
+                    &lt;/div&gt;
+                    &lt;div class="col-12 col-md-6 col-lg-8"&gt;
+                      Contenu de la colonne
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                </pre>
+                <p>Dans cet exemple, la première et la deuxième colonne auront une largeur de 6 colonnes sur les petits écrans et 4 colonnes sur les écrans plus grands, tandis que la troisième colonne occupera toutes les colonnes sur les petits écrans et la moitié de l'espace disponible sur les écrans moyens et grands.</p>
+              </div>
+            </section>
+            <section>
+                <h2>Classes pour les marges</h2>
+              
+                <p>Les classes suivantes permettent de définir des marges sur les éléments :</p>
+              
+                <h3>Classes pour la marge globale (m-x)</h3>
+              
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Classe</th>
+                      <th>Propriétés CSS</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>.m-0</td>
+                      <td>margin: 0 !important;</td>
+                    </tr>
+                    <tr>
+                      <td>.m-1</td>
+                      <td>margin: 0.25rem !important;</td>
+                    </tr>
+                    <tr>
+                      <td>.m-2</td>
+                      <td>margin: 0.5rem !important;</td>
+                    </tr>
+                    <tr>
+                      <td>.m-3</td>
+                      <td>margin: 1rem !important;</td>
+                    </tr>
+                    <tr>
+                      <td>.m-4</td>
+                      <td>margin: 1.5rem !important;</td>
+                    </tr>
+                    <tr>
+                      <td>.m-5</td>
+                      <td>margin: 3rem !important;</td>
+                    </tr>
+                  </tbody>
+                </table>
+              
+                <p>Les classes .mx-x et .my-x permettent de définir respectivement la marge horizontale et la marge verticale.</p>
+              
+                <h3>Classes pour la marge horizontale (mx-x)</h3>
+              
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Classe</th>
+                      <th>Propriétés CSS</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>.mx-0</td>
+                      <td>margin-right: 0 !important; margin-left: 0 !important;</td>
+                    </tr>
+                    <tr>
+                      <td>.mx-1</td>
+                      <td>margin-right: 0.25rem !important; margin-left: 0.25rem !important;</td>
+                    </tr>
+                    <tr>
+                      <td>.mx-2</td>
+                      <td>margin-right: 0.5rem !important; margin-left: 0.5rem !important;</td>
+                    </tr>
+                    <tr>
+                      <td>.mx-3</td>
+                      <td>margin-right: 1rem !important; margin-left: 1rem !important;</td>
+                    </tr>
+                    <tr>
+                      <td>.mx-4</td>
+                      <td>margin-right: 1.5rem !important; margin-left: 1.5rem !important;</td>
+                    </tr>
+                    <tr>
+                      <td>.mx-5</td>
+                      <td>margin-right: 3rem !important; margin-left: 3rem !important;</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </section>
+            <section>
+                <h2>Guide d'utilisation des classes</h2>
+              
+                <h3>Classes de police</h3>
+                <p>Les classes suivantes permettent de définir la famille de police :</p>
+                <ul>
+                  <li><code>.font-family-josefin</code> : définir la police "Josefin" </li>
+                  <li><code>.font-family-roboto</code> : définir la police "Roboto" </li>
+                </ul>
+              
+                <h3>Classes de mise en forme de texte</h3>
+                <p>Les classes suivantes permettent de définir la mise en forme du texte :</p>
+                <ul>
+                  <li><code>.uppercase</code> : mettre en majuscules</li>
+                  <li><code>.bold</code> : mettre en gras</li>
+                  <li><code>.text-align-center</code> : aligner le texte au centre</li>
+                  <li><code>.text-align-justify</code> : justifier le texte</li>
+                </ul>
+              
+                <h3>Classes de positionnement</h3>
+                <p>Les classes suivantes permettent de définir la position :</p>
+                <ul>
+                  <li><code>.position-relative</code> : position relative</li>
+                </ul>
+              
+                <h3>Classes de taille de police</h3>
+                <p>Les classes suivantes permettent de définir la taille de la police :</p>
+                <ul>
+                  <li><code>.font-size-X</code> : définir la taille de police en X où X est compris entre 6 et 28 (par exemple <code>.font-size-12</code>)</li>
+                  <li><code>.font-size-sm-X</code> : définir la taille de police en X pour les écrans d'au moins 576 pixels de largeur</li>
+                  <li><code>.font-size-md-X</code> : définir la taille de police en X pour les écrans d'au moins 768 pixels de largeur</li>
+                  <li><code>.font-size-lg-X</code> : définir la taille de police en X pour les écrans d'au moins 992 pixels de largeur</li>
+                </ul>
+              
+                <h3>Classes de rayon de bordure</h3>
+                <p>Les classes suivantes permettent de définir le rayon de la bordure :</p>
+                <ul>
+                  <li><code>.border-radius-X</code> : définir le rayon de la bordure en X où X est compris entre 6 et 28 (par exemple <code>.border-radius-12</code>)</li>
+                </ul>
+              
+                <h3>Classes d'overflow</h3>
+                <p>Les classes suivantes permettent de définir le comportement en cas de débordement :</p>
+                <ul>
+                  <li><code>.overflow-hidden</code> : cacher le débordement</li>
+                  <li><code>.overflow-x-hidden</code> : cacher le débordement horizontal</li>
+                  <li><code>.overflow-y-hidden</code> : cacher le débordement vertical</li>
+                </ul>
+                <h3>Classe de visibilité</h3>
+    <p>Les classes de visibilité permettent de masquer ou afficher des éléments en fonction de la largeur de l'écran. Les classes ".lg-hidden" et ".lg-visible" sont disponibles pour masquer ou afficher des éléments pour les écrans de largeur supérieure à 992px.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Classe</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>.hidden</td>
+                <td>Masque l'élément, mais conserve sa place dans le layout</td>
+            </tr>
+            <tr>
+                <td>.visible</td>
+                <td>Affiche l'élément</td>
+            </tr>
+            <tr>
+                <td>.lg-hidden</td>
+                <td>Masque l'élément pour les écrans de largeur supérieure à 992px</td>
+            </tr>
+            <tr>
+                <td>.lg-visible</td>
+                <td>Affiche l'élément pour les écrans de largeur supérieure à 992px</td>
+            </tr>
+        </tbody>
+    </table>
+
+      
