@@ -23,3 +23,17 @@
         max-height: 43rem !important;
     }
 }
+
+.img-small {
+    @media (min-width: 576px) {
+        max-height: 20rem !important;
+    }
+
+    @media (min-width: 768px) {
+        max-height: 25rem !important;
+    }
+
+    @media (min-width: 992px) {
+        max-height: 30rem !important;
+    }
+}
